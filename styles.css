@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: radial-gradient(circle at center,  #29003c, #120018);
+}
+
+#escena {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transform-origin: center center;
+}
+
+#fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #7b0f1a, #3b000a);
+    transition: background 4s ease;
+}
+
+/* #fondo::after { 
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    pointer-events: none;
+    background: 
+        radial-gradient(circle, rgba(255,223,100,0.8) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,223,100,0.6) 1px, transparent 1px);
+    background-size: 80px 80px, 120px 120px;
+    opacity: 0;
+    transition: opacity 3s ease;
+} */
+
+#fondo.noche::after {
+    opacity: 1;
+}
+
+#botonCherry {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #ffffff33;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+#suelo {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 120px;
+    background: #60e005;
+    transition: bottom 2s ease;
+}
+
+#semilla {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: brown;
+    border-radius: 50%;
+    display: none;
+}
+
+#monitos {
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* centra el grupo */
+    align-items: flex-end;
+    gap: 60px; /* separación entre los dos */
+}
+
+/* MONO */
+
+.mono {
+    position: relative;
+    width: 40px;
+    height: 110px;
+}
+
+/* cabeza sin cara */
+.cabeza {
+    width: 40px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+/* cuerpo */
+.cuerpo {
+    width: 3px;
+    height: 40px;
+    background: white;
+    margin: 0 auto;
+}
+
+/* brazos */
+.brazo {
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    background: white;
+    top: 45px;
+}
+
+.brazo.izquierdo {
+    left: 5px;
+    transform: rotate(30deg);
+}
+
+.brazo.derecho {
+    right: 5px;
+    transform: rotate(-30deg);
+}
+
+/* piernas */
+.pierna {
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    background: white;
+    bottom: 0;
+}
+
+.pierna.izquierda {
+    left: 12px;
+    transform: rotate(20deg);
+}
+
+.pierna.derecha {
+    right: 12px;
+    transform: rotate(-20deg);
+}
+
+
+/*#plantas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}*/
+
+.tulipan {
+    position: absolute;
+    bottom: 120px;
+    width: 24px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.tallo {
+    width: 4px;
+    height: 80px;
+    background: #1faa00;
+
+    transform-origin: bottom;
+    transform: scaleY(0);
+    animation: crecerTallo 2s ease forwards;
+}
+
+.flor {
+    width: 24px;
+    height: 28px;
+    background: #ff4da6;
+
+    clip-path: polygon(
+        50% 0%,
+        80% 30%,
+        100% 70%,
+        75% 100%,
+        25% 100%,
+        0% 70%,
+        20% 30%
+    );
+
+    transform: scale(0);
+    animation: abrirFlor 1s ease forwards;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes crecerTallo {
+    from { transform: scaleY(0); }
+    to   { transform: scaleY(1); }
+}
+
+@keyframes abrirFlor {
+    from { transform: scale(0); }
+    to   { transform: scale(1); }
+}
+
+
+
+
+
+@keyframes abrirFlor {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+
+
+.estrella {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #ffd86b;
+    border-radius: 50%;
+    opacity: 0;
+    animation: brillar 3s infinite alternate;
+}
+
+@keyframes brillar {
+    from { opacity:0.2; }
+    to { opacity: 1; }
+}
