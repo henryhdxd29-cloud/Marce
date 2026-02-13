@@ -1,5 +1,6 @@
 const boton = document.getElementById("botonCherry");
 const fondo = document.getElementById("fondo");
+const musica = document.getElementById("musica");
 
 boton.addEventListener("click", () => {
 
@@ -15,6 +16,7 @@ boton.addEventListener("click", () => {
         boton.style.display = "none";
         crearEstrellas();
         iniciarEscena();
+        musica.play();
     }, 2000);
 });
 
