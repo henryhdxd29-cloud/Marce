@@ -28,7 +28,7 @@ function iniciarEscena() {
 function caerSemilla() {
     const semilla = document.getElementById("semilla");
     semilla.style.display = "block";
-    semilla.style.top = "-60px";
+    semilla.style.top = "-100px";
 
     setTimeout(() => {
         semilla.style.transition = "top 2s ease";
@@ -144,3 +144,4 @@ function crearMonos() {
         contenedor.appendChild(mono);
     }
 }
+
