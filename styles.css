@@ -2,13 +2,13 @@ body {
     margin: 0;
     overflow: hidden;
     background: radial-gradient(circle at center,  #29003c, #120018);
+    height: 100dvh;
 }
 
 #escena {
     position: relative;
-    aspect-ratio: 16/9;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
     /* height: 50vh; */
     overflow: hidden;
     transform-origin: center center;

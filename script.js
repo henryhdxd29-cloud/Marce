@@ -144,5 +144,3 @@ function crearMonos() {
         contenedor.appendChild(mono);
     }
 }
-
-
