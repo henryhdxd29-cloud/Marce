@@ -57,11 +57,13 @@ body {
 
 #suelo {
     position: absolute;
-    bottom: -100px;
-    width: 100%;
+    bottom: -100%;
+    left: 25%;
+    width: 50%;
     height: 120px;
     background: #60e005;
     transition: bottom 2s ease;
+    z-index: 1;
 }
 
 #semilla {
@@ -73,6 +75,12 @@ body {
     background: brown;
     border-radius: 50%;
     display: none;
+    z-index: 0;
+}
+
+#semilla.oculto {
+    height: 0;
+    overflow: hidden;
 }
 
 #monitos {

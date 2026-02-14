@@ -39,6 +39,7 @@ function caerSemilla() {
 
 function crecerPlantas () {
     const plantas = document.getElementById("plantas");
+    const semilla = document.getElementById("semilla");
 
     for(let i = 0; i < 5; i++) {
         let brote = document.createElement("div");
@@ -71,7 +72,7 @@ function mostrarTextos () {
     const textos = document.getElementById("textos");
 
     textos.innerHTML = `
-    <h2 style="position:absolute; top: 20%; width:100%; text-align:center; color: white;">
+    <h2 style="position:absolute; bottom: 280px; width:100%; text-align:center; color: white;">
         Pues eramos
     </h2>
     
@@ -101,7 +102,7 @@ function crearTulipanes() {
     cont.innerHTML = "";
 
 
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 20; i++) {
         const tulipan = document.createElement("div");
         tulipan.className = "tulipan";
         tulipan.style.left = (35 + i * 1.5) + "%";
