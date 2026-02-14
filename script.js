@@ -76,9 +76,9 @@ function mostrarTextos () {
         Pues eramos
     </h2>
     
-    <div style="position:absolute; bottom:260px; left:45%; color:white;">Tu 💜</div>
+    <div style="position:absolute; bottom:260px; left:40%; color:white;">Tu 💜</div>
     <div style="position:absolute; bottom:240px; left:50%; color:white;"> y </div>
-    <div style="position:absolute; bottom:260px; left:52.5%; color:white;">Yo ❤️</div>
+    <div style="position:absolute; bottom:260px; left:55%; color:white;">Yo ❤️</div>
     `;
 }
 
@@ -144,3 +144,4 @@ function crearMonos() {
         contenedor.appendChild(mono);
     }
 }
+
