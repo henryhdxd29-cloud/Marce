@@ -6,8 +6,10 @@ body {
 
 #escena {
     position: relative;
-    width: 100%;
-    height: 50vh;
+    aspect-ratio: 16/9;
+    width: 100vw;
+    height: auto;
+    /* height: 50vh; */
     overflow: hidden;
     transform-origin: center center;
 }
@@ -85,7 +87,7 @@ body {
 
 #monitos {
     position: absolute;
-    bottom: 120px;
+    bottom: 140px;
     width: 100%;
     height: 200px;
     display: flex;
@@ -242,5 +244,4 @@ body {
 @keyframes brillar {
     from { opacity:0.2; }
     to { opacity: 1; }
-
 }

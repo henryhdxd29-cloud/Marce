@@ -21,14 +21,14 @@ boton.addEventListener("click", () => {
 });
 
 function iniciarEscena() {
-    document.getElementById("suelo").style.bottom ="0";
+    document.getElementById("suelo").style.bottom ="20px";
     caerSemilla();
 }
 
 function caerSemilla() {
     const semilla = document.getElementById("semilla");
     semilla.style.display = "block";
-    semilla.style.top = "-50px";
+    semilla.style.top = "-60px";
 
     setTimeout(() => {
         semilla.style.transition = "top 2s ease";
@@ -72,12 +72,13 @@ function mostrarTextos () {
     const textos = document.getElementById("textos");
 
     textos.innerHTML = `
-    <h2 style="position:absolute; bottom: 280px; width:100%; text-align:center; color: white;">
+    <h2 style="position:absolute; bottom: 300px; width:100%; text-align:center; color: white;">
         Pues eramos
     </h2>
     
-    <div style="position:absolute; bottom:240px; left:47%; color:white;">Tu 💜</div>
-    <div style="position:absolute; bottom:240px; left:52%; color:white;">Yo ❤️</div>
+    <div style="position:absolute; bottom:260px; left:45%; color:white;">Tu 💜</div>
+    <div style="position:absolute; bottom:260px; left:50%; color:white;"> y </div>
+    <div style="position:absolute; bottom:260px; left:52.5%; color:white;">Yo ❤️</div>
     `;
 }
 
