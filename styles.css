@@ -3,6 +3,7 @@ body {
     overflow: hidden;
     background: radial-gradient(circle at center,  #29003c, #120018);
     height: 100dvh;
+    bottom: 50dvh;
 }
 
 #escena {
